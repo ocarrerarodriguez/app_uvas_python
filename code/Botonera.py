@@ -141,7 +141,7 @@ class Botonera:
         self.estadios=estadios
         self.ventana.ventana_modal = Modal()
         #datos para el boton de configuracion
-        datos_conf=[self.ruta_pdf,self.ventana.Liststore, 5, 4]
+        datos_conf=[self.ruta_pdf,self.ventana.Liststore, 16, 8]
         #conectamos el boton configuracion con sus datos ala funcion on_configuracion_click
         self.Botones[0].connect("clicked", self.on_configuracion_click,datos_conf)
         # conectamos los botnones de la botonera con el evento cliked en la funcion on_boton_clicked()
@@ -172,4 +172,5 @@ class Botonera:
 
 
     def on_configuracion_click(self,*args):
+        print(*args)
         informe_gsm(args[1][0], args[1][1],args[1][2],args[1][3])
