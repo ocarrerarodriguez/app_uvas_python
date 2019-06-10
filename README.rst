@@ -62,6 +62,7 @@ Hipervinculos
 http://www.danielcastelao.org
 
 `Hipervínculo con texto <http://www.danielcastelao.org>`_
+`Hipervínculo con texto <\build\html\index.html>`_
 
 Enlaces a seccións dentro da propia páxina.
 `Este é o título h2`_
